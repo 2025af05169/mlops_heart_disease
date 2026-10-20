@@ -23,6 +23,8 @@ This repository implements an end-to-end production-ready Machine Learning syste
 ### 1. Run Locally
 ```bash
 python -m venv venv
-venv\Scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 uvicorn src.app:app --reload
+At chrome open : http://127.0.0.1:8000/
